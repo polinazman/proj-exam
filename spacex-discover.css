@@ -1,3 +1,13 @@
+@font-face {
+	font-family: "D-Din Exp";
+	src: url("../fonts/d-din/D-DINExp.otf");
+}
+
+@font-face {
+	font-family: "D-Din Exp-Bold";
+	src: url("../fonts/d-din/D-DINExp-Bold.otf");
+}
+
 body {
 	margin: 0;
 	background-color: #06151C;

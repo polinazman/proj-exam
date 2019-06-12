@@ -35,8 +35,6 @@ header {
 	display: inline-block;
 }
 
-
-
 nav {
 	display: inline-block;
 }
@@ -54,4 +52,32 @@ a {
 	color: #fff;
 	text-transform: uppercase;
 	font-family: Roboto;
+}
+
+/*Main content*/
+.mainsection {
+	width: 700px;
+	margin-left: 10%;
+	display: inline-block;
+}
+
+h1 {
+	font-family: "D-DIN Exp-Bold";
+	text-transform: uppercase;
+	color: #6280AC;
+	font-size: 1.4em;
+}
+
+/*Sidebar*/
+.sidebar {
+	display: inline-block;
+	float: right;
+	width: 500px;
+}
+
+h2 {
+	font-family: "D-DIN Exp-Bold";
+	text-transform: uppercase;
+	color: #6280AC;
+	font-size: 1.2em;
 }

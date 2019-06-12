@@ -8,13 +8,50 @@
 	src: url("../fonts/d-din/D-DINExp-Bold.otf");
 }
 
+@font-face {
+	font-family: "Roboto";
+	src: url("../fonts/roboto-2014/Roboto-Regular.ttf");
+}
+
 body {
 	margin: 0;
 	background-color: #06151C;
 	color:#fff;
 }
 
+/*Header*/
+
 header {
 	background-color: #030014;
 	color: #fff;
+	align-items: center;
+}
+
+#logo {
+	max-height: 40px;
+	margin-left: 4%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: inline-block;
+}
+
+
+
+nav {
+	display: inline-block;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: Roboto;
 }

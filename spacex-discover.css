@@ -37,7 +37,7 @@ header {
 
 nav {
 	float: right;
-	margin-right: 19%;
+	margin-right: 18%;
 }
 
 ul {
@@ -55,7 +55,7 @@ li a {
 	color: #fff;
 	text-transform: uppercase;
 	font-family: Roboto;
-	padding-right: 100px;
+	padding-right: 130px;
 	padding-top: 15px;
 	font-size: 1.2em;
 	transform: scale(1, 0.95);
@@ -73,10 +73,14 @@ li a:hover {
 	text-decoration: underline;
 }
 
+#banner {
+	width: 100%;
+}
+
 /*Main content*/
 .mainsection {
 	width: 700px;
-	margin-left: 10%;
+	margin-left: 13%;
 	display: inline-block;
 }
 
@@ -85,6 +89,12 @@ h1 {
 	text-transform: uppercase;
 	color: #6280AC;
 	font-size: 1.4em;
+	transform: scale(1, 0.95);
+	-webkit-transform: scale(1, 0.95); /* Safari and Chrome */
+	-moz-transform: scale(1, 0.95); /* Firefox */
+	-ms-transform: scale(1, 0.95); /* IE 9+ */
+	-o-transform: scale(1, 0.95); /* Opera */
+	text-align: center;
 }
 
 /*Sidebar*/
@@ -94,9 +104,22 @@ h1 {
 	width: 500px;
 }
 
+.fact-box {
+	border-left: 2px solid #fff;
+}
+
+.link-box {
+	border-left: 2px solid #fff;
+}
+
 h2 {
 	font-family: "D-DIN Exp-Bold";
 	text-transform: uppercase;
 	color: #6280AC;
 	font-size: 1.2em;
+	transform: scale(1, 0.95);
+	-webkit-transform: scale(1, 0.95); /* Safari and Chrome */
+	-moz-transform: scale(1, 0.95); /* Firefox */
+	-ms-transform: scale(1, 0.95); /* IE 9+ */
+	-o-transform: scale(1, 0.95); /* Opera */
 }

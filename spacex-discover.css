@@ -102,14 +102,21 @@ h1 {
 	display: inline-block;
 	float: right;
 	width: 500px;
+	margin-right: 40px;
 }
 
 .fact-box {
 	border-left: 2px solid #fff;
+	padding-left: 30px;
+}
+
+hr {
+	size: 2px;
 }
 
 .link-box {
 	border-left: 2px solid #fff;
+	padding-left: 30px;
 }
 
 h2 {

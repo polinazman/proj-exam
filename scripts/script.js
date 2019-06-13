@@ -27,15 +27,16 @@ function fillPage(myArticle) {
 		outerDiv.appendChild(innerDiv);
 
 		var img = document.createElement('img');
-		img.setAttribute('src', doc.featured_image);
+		img.setAttribute("src", doc.featured_image);
 		innerDiv.appendChild(img);
 
 		var textbox = document.createElement("div");
 		textbox.setAttribute("class", "textbox");
 		innerDiv.appendChild(textbox);
 
-		var a = document.createElement('a');
-		a.setAttribute('href', doc.url);
+		var a = document.createElement("a");
+		a.setAttribute("href", doc.url);
+		a.setAttribute("target", "_blank")
 		textbox.appendChild(a);
 		a.innerHTML = doc.title;
 

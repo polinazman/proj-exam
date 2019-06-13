@@ -1,6 +1,6 @@
 window.onload = makeApiCall;
 
-function makeApiCall(e, title) {
+function makeApiCall(e) {
     var requestUrl = "https://spaceflightnewsapi.net/api/v1/articles?search=spacex";
 
     var request = new XMLHttpRequest();

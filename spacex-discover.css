@@ -25,6 +25,11 @@ header {
 	background-color: #030014;
 	color: #fff;
 	align-items: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
+	z-index: 1;
 }
 
 #logo {
@@ -78,6 +83,10 @@ li a:hover {
 }
 
 /*Main content*/
+main {
+	margin-top: 60px;
+}
+
 .mainsection {
 	width: 1050px;
 	display: inline-block;
@@ -207,7 +216,7 @@ p {
 .countdown {
 	position: absolute;
 	top: 290px;
-	left: 41.5%;
+	left: 40.5%;
 }
 
 .countdown h2 {
@@ -223,4 +232,15 @@ p {
 	font-size: 2.6em;
 	text-align: center;
 
+}
+
+#days, #hours, #mins, #secs {
+	display: inline-block;
+	padding: 2px;
+}
+
+/*Footer*/
+footer {
+	background-color: #030014;
+	color: #fff;
 }

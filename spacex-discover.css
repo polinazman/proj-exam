@@ -205,12 +205,14 @@ p {
 .launch-content {
 	display: inline-block;
 	width: 60%;
-	margin-left: 40px;
+	margin-top: 15px;
+	margin-left: 80px;
 	position: absolute;
 }
 
 .launch-content h1 {
 	text-align: left;
+	margin-left: 0;
 }
 
 .countdown {
@@ -253,18 +255,38 @@ p {
 	margin-left: 0;
 }
 
-.peopleText, .peopleInSpace {
-	margin-bottom: 10px;
-	font-family: "Roboto";
+.graphics {
+	display: inline-block;
+}
+
+#astronaut-graphic {
+	display: inline-block;
+	height: 75px;
+	padding-left: 30px;
 }
 
 #number {
 	font-family: "Roboto";
-	font-size: 4em;
+	font-size: 6em;
+	display: inline-block;
+	margin-left: 40px;
 }
 
 .peopleText {
 	text-transform: uppercase;
+	font-size: 1.1em;
+	margin-bottom: 10px;
+	font-family: "Roboto";
+	padding-top: 10px;
+}
+
+.peopleInSpace {
+	font-family: "Roboto";
+	display: inline-block;
+	margin-left: 40px;
+	padding-bottom: 10px;
+	line-height: 23px;
+
 }
 
 /*Footer*/

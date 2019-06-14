@@ -16,7 +16,7 @@ request.onload = function() {
 
 			var outputNames = names.toString();
 
-			document.getElementById("people").innerHTML += outputNames + ", ";
+			document.getElementById("people").innerHTML += outputNames + "<br>";
 
 		}
 }

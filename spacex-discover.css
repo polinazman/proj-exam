@@ -206,7 +206,7 @@ p {
 	display: inline-block;
 	width: 60%;
 	margin-left: 40px;
-	position: relative;
+	position: absolute;
 }
 
 .launch-content h1 {
@@ -237,6 +237,34 @@ p {
 #days, #hours, #mins, #secs {
 	display: inline-block;
 	padding: 2px;
+}
+
+/*Live in space*/
+.live-content {
+	display: inline-block;
+	width: 60%;
+	margin-left: 80px;
+	margin-top: 15px;
+	position: absolute;
+}
+
+.live-content h1 {
+	text-align: left;
+	margin-left: 0;
+}
+
+.peopleText, .peopleInSpace {
+	margin-bottom: 10px;
+	font-family: "Roboto";
+}
+
+#number {
+	font-family: "Roboto";
+	font-size: 4em;
+}
+
+.peopleText {
+	text-transform: uppercase;
 }
 
 /*Footer*/

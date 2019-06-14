@@ -22,26 +22,6 @@ request.onload = function() {
 					
 					var timer = document.getElementById("timer");
 
-					/*var timerDays = document.createElement("timer-days");
-					timerDays.setAttribute("class", "timer-days");
-					timer.appendChild(timerDays);
-					timerDays.innerHTML = days + "d ";
-
-					var timerHours = document.createElement("timer-hours");
-					timerHours.setAttribute("class", "timer-hours");
-					timer.appendChild(timerHours);
-					timerHours.innerHTML = hours + "h ";
-
-					var timerMins = document.createElement("timer-mins");
-					timerMins.setAttribute("class", "timer-mins");
-					timer.appendChild(timerMins);
-					timerMins.innerHTML = mins + "m ";
-
-					var timerSecs = document.createElement("timer-secs");
-					timerSecs.setAttribute("class", "timer-secs");
-					timer.appendChild(timerSecs);
-					timerSecs.innerHTML = secs + "s ";*/
-
 					document.getElementById("days").innerHTML = days + "d ";
 					document.getElementById("hours").innerHTML = hours + "h ";
 					document.getElementById("mins").innerHTML = mins + "m ";

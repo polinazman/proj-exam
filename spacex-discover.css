@@ -289,8 +289,70 @@ p {
 
 }
 
+/*Contact*/
+.contact-form {;
+	max-width: 80%;
+	margin: 0 auto;
+	padding: 0 50px 30px 20px;
+	border: none;
+}
+
+.label {
+	font-family: "Roboto";
+	font-size: 1.1em;
+	margin: 20px auto 8px auto;
+	display: block;
+}
+.contact-form input[type=text], input[type=email] {
+	width: 98%;
+	padding: 10px;
+	margin: 2px auto;
+	border: 1px solid #000000;
+}
+
+.contact-form input[type=text]:focus, input[type=email]:focus {
+	border: 1px solid #046FB7;
+}
+
+textarea {
+	height: 150px;
+	width: 98%;
+	border: 1px solid #000000;
+	padding: 10px;
+}
+
+textarea:focus {
+	border: 1px solid #046FB7;
+}
+
+.error {
+	color: #FC7575;
+	display: none;
+	font-size: 1.04em;
+}
+
+button {
+	margin-top: 40px;
+	float: right;
+	background-color: #046FB7;
+	color: #fff;
+	padding: 10px 15px 10px 15px;
+	font-family: "Roboto";
+	font-size: 1em;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 2px solid #046FB7;
+
+}
+
+button:hover {
+	border: 2px solid #fff;
+}
+
 /*Footer*/
 footer {
 	background-color: #030014;
 	color: #fff;
 }
+
+/*Media queries*/

@@ -64,7 +64,7 @@ li a {
 	color: #fff;
 	text-transform: uppercase;
 	font-family: Roboto;
-	padding-left: 122px;
+	margin-left: 122px;
 	padding-top: 15px;
 	font-size: 1.2em;
 	transform: scale(1, 0.95);
@@ -89,11 +89,13 @@ li a:hover {
 /*Main content*/
 main {
 	width: 100%;
+	padding-bottom: 20px;
 }
 
 .mainsection {
-	width: 1050px;
 	display: inline-block;
+	width: 68%;
+	margin-top: 15px;
 }
 
 h1 {
@@ -106,28 +108,29 @@ h1 {
 	-moz-transform: scale(1, 0.95); /* Firefox */
 	-ms-transform: scale(1, 0.95); /* IE 9+ */
 	-o-transform: scale(1, 0.95); /* Opera */
-	text-align: center;
+	text-align: left;
 	margin-bottom: 35px;
-	margin-left: 20px;
+	margin-left: 26%;
 }
 
 .news {
-	max-width: 850px;
-	margin-left: 14%;
+	max-width: 80%;
+	margin-left: 20%;
 }
 
 .col1 {
-	max-width: 380px;
+	max-width: 281px;
 	height: 320px;
     margin-right: 45px;
     display: inline-block;
     font-size: 0.8em;
     padding-bottom: 30px;
+    vertical-align: top;
 }
 
 .col1 img {
-	width: 360px;
-	height: 240px;
+	width: 300px;
+	height: 230px;
 	object-fit: cover;
 	display: inline-block;
 	border: 3px solid #fff;
@@ -152,9 +155,9 @@ h1 {
 /*Sidebar*/
 .sidebar {
 	display: inline-block;
-	float: right;
-	width: 450px;
-	margin-right: 40px;
+	width: 28%;
+	vertical-align: top;
+	margin-top: 20px;
 }
 
 .fact-box {
@@ -188,16 +191,16 @@ p {
 }
 
 /*Launch page*/
-#launch-pic {
-	width: 100%;
+#banner-launch {
+	max-width: 100%;
 }
 
 .left-sidebar {
 	display: inline-block;
-	width: 330px;
+	width: 21%;
 	margin-left: 30px;
 	margin-top: 20px;
-	padding-right: 40px;
+	padding-right: 37px;
 	border-right: 2px solid #fff;
 	vertical-align: top;
 }
@@ -212,7 +215,6 @@ p {
 	width: 60%;
 	margin-top: 15px;
 	margin-left: 80px;
-	position: absolute;
 }
 
 .launch-content h1 {
@@ -222,7 +224,7 @@ p {
 
 .countdown {
 	position: absolute;
-	top: 290px;
+	top: 34%;
 	left: 40.5%;
 }
 
@@ -371,9 +373,18 @@ footer {
 	#logo {
 		margin-right: 20px;
 	}
-
 	li a {
-		padding-left: 80px;
+		margin-left: 80px;
+	}
+	.col1 {
+		width: 230px;
+	}
+	.col1 img {
+		width: 250px;
+		height: 185px;
+	}
+	.countdown {
+		top: 24%;
 	}
 }
 
@@ -384,9 +395,19 @@ footer {
 	}
 
 	li a {
-		padding-left: 35px;
+		margin-left: 35px;
 		padding-top: 10px;
 		font-size: 1.1em;
+	}
+	.countdown {
+		top: 21%;
+		left: 35%;
+	}
+	.launch-content, .live-content {
+		margin-left: 40px;
+	}
+	.peopleInSpace {
+		margin-left: 33px;
 	}
 }
 
@@ -402,17 +423,65 @@ footer {
 		display: block;
 		float: none;
 	}
-	ul{
+	ul {
 		margin-top: unset;
 	}
 	li a {
 		display: block;
 		width: 90%;
-		padding: unset;
+		margin: unset;
 		padding-top: 4px;
 		text-align: center;
+		margin-bottom: 2px;
 	}
 	main {
 	 	margin-top: 80px;
 	 }
+	.mainsection {
+		width: 75%;
+	}
+	.col1 {
+		width: 65%;
+		height: unset;
+	}
+	.col1 img {
+		width: 400px;
+		height: 280px;
+	}
+	.sidebar, .left-sidebar {
+		display: none;
+	}
+	#banner-launch {
+		display: none;
+	}
+	.countdown {
+	position: unset;
+	background-image: url(../photo/launch.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 120px;
+	position: unset;
+	}
+	.countdown h2 {
+		width: unset;
+	}
+	#timer {
+		font-size: 1.5em;
+		padding-top: 40px;
+	}
+	.launch-content, .live-content {
+		width: 75%;
+		margin: auto;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#logo {
+		max-height: 24px;
+	}
+	.col1 img {
+		width: 245px;
+		height: 190px;
+	}
 }

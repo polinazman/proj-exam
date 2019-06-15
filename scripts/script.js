@@ -1,44 +1,48 @@
-window.onload = makeApiCall;
+document.addEventListener('DOMContentLoaded', function() {
 
-function makeApiCall(e) {
-    var requestUrl = "https://spaceflightnewsapi.net/api/v1/articles?search=spacex";
+	window.onload = makeApiCall;
 
-    var request = new XMLHttpRequest();
-    request.open("GET", requestUrl);
+	function makeApiCall(e) {
+	    var requestUrl = "https://spaceflightnewsapi.net/api/v1/articles?search=spacex";
 
-    request.responseType = "json";
+	    var request = new XMLHttpRequest();
+	    request.open("GET", requestUrl);
 
-    request.send();
+	    request.responseType = "json";
 
-    request.onload = (e) => fillPage(request.response);
-}
+	    request.send();
 
-function fillPage(myArticle) {
-	myArticle.docs.forEach(doc => {
+	    request.onload = (e) => fillPage(request.response);
+	}
 
-		var docs = document.getElementById("article");
+	function fillPage(myArticle) {
+		myArticle.docs.forEach(doc => {
 
-		var outerDiv = document.createElement("div");
-		outerDiv.setAttribute("class", "col1");
-		docs.appendChild(outerDiv);
+			var docs = document.getElementById("article");
 
-		var innerDiv = document.createElement("div");
-		innerDiv.setAttribute("class", "article-container");
-		outerDiv.appendChild(innerDiv);
+			var outerDiv = document.createElement("div");
+			outerDiv.setAttribute("class", "col1");
+			docs.appendChild(outerDiv);
 
-		var img = document.createElement('img');
-		img.setAttribute("src", doc.featured_image);
-		innerDiv.appendChild(img);
+			var innerDiv = document.createElement("div");
+			innerDiv.setAttribute("class", "article-container");
+			outerDiv.appendChild(innerDiv);
 
-		var textbox = document.createElement("div");
-		textbox.setAttribute("class", "textbox");
-		innerDiv.appendChild(textbox);
+			var img = document.createElement('img');
+			img.setAttribute("src", doc.featured_image);
+			innerDiv.appendChild(img);
 
-		var a = document.createElement("a");
-		a.setAttribute("href", doc.url);
-		a.setAttribute("target", "_blank")
-		textbox.appendChild(a);
-		a.innerHTML = doc.title;
+			var textbox = document.createElement("div");
+			textbox.setAttribute("class", "textbox");
+			innerDiv.appendChild(textbox);
 
-	});
-}
+			var a = document.createElement("a");
+			a.setAttribute("href", doc.url);
+			a.setAttribute("target", "_blank")
+			textbox.appendChild(a);
+			a.innerHTML = doc.title;
+
+		});
+	}
+
+}, false);

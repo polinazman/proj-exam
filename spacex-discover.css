@@ -25,24 +25,27 @@ header {
 	background-color: #030014;
 	color: #fff;
 	align-items: center;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	overflow: hidden;
-	z-index: 1;
+	height: 60px;
 }
+
 
 #logo {
 	max-height: 40px;
-	margin-left: 5%;
+	margin-left: 80px;
+	margin-right: 65px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	display: inline-block;
+	float: left;
 }
 
-nav {
-	float: right;
-	margin-right: 18%;
+.navbar {
+	overflow: hidden;
+	background-color: #030014;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
 }
 
 ul {
@@ -55,12 +58,13 @@ li {
 }
 
 li a {
-	display: inline-block;
+	float: left;
+	display: block;
 	text-decoration: none;
 	color: #fff;
 	text-transform: uppercase;
 	font-family: Roboto;
-	padding-right: 130px;
+	padding-left: 122px;
 	padding-top: 15px;
 	font-size: 1.2em;
 	transform: scale(1, 0.95);
@@ -79,12 +83,12 @@ li a:hover {
 }
 
 #banner {
-	width: 100%;
+	max-width: 100%;
 }
 
 /*Main content*/
 main {
-	margin-top: 60px;
+	width: 100%;
 }
 
 .mainsection {
@@ -356,3 +360,59 @@ footer {
 }
 
 /*Media queries*/
+@media screen and (min-width: 1600px) {
+	body {
+		font-size: 100%;
+	}
+
+}
+
+@media screen and (max-width: 1200px) {
+	#logo {
+		margin-right: 20px;
+	}
+
+	li a {
+		padding-left: 80px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	#logo {
+		margin-right: 15px;
+		max-height: 35px;
+	}
+
+	li a {
+		padding-left: 35px;
+		padding-top: 10px;
+		font-size: 1.1em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#logo {
+		max-height: 26px;
+		float: none;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.navbar {
+		display: block;
+		float: none;
+	}
+	ul{
+		margin-top: unset;
+	}
+	li a {
+		display: block;
+		width: 90%;
+		padding: unset;
+		padding-top: 4px;
+		text-align: center;
+	}
+	main {
+	 	margin-top: 80px;
+	 }
+}

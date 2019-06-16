@@ -68,7 +68,7 @@ li a {
 	text-decoration: none;
 	color: #fff;
 	text-transform: uppercase;
-	font-family: Roboto;
+	font-family: "Roboto", sans-serif;
 	margin-left: 122px;
 	padding-top: 15px;
 	font-size: 1.2em;
@@ -104,7 +104,7 @@ main {
 }
 
 h1 {
-	font-family: "D-DIN Exp-Bold";
+	font-family: "D-DIN Exp-Bold", sans-serif;
 	text-transform: uppercase;
 	color: #6280AC;
 	font-size: 1.4em;
@@ -144,7 +144,7 @@ h1 {
 
 .textbox a {
 	display: inline-block;
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-weight: normal;
 	height: 60px;
 	color: #fff;
@@ -169,7 +169,7 @@ h1 {
 	border-left: 2px solid #fff;
 	padding-left: 30px;
 	padding-bottom: 20px;
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 }
 
 hr {
@@ -182,7 +182,7 @@ hr {
 }
 
 .link-box a {
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	text-decoration: none;
 	display: block;
 	color: #0486DC;
@@ -197,7 +197,7 @@ hr {
 }
 
 h2 {
-	font-family: "D-DIN Exp-Bold";
+	font-family: "D-DIN Exp-Bold", sans-serif;
 	text-transform: uppercase;
 	color: #6280AC;
 	font-size: 1.2em;
@@ -209,7 +209,7 @@ h2 {
 }
 
 p {
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 }
 
 /*Launch page*/
@@ -228,12 +228,12 @@ p {
 }
 
 .left-sidebar h2 {
-	font-family: "D-DIN Exp";
+	font-family: "D-DIN Exp", sans-serif;
 	font-weight: normal;
 }
 
 .left-sidebar a {
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	text-decoration: none;
 	color: #0486DC;
 	display: block;
@@ -265,7 +265,7 @@ p {
 }
 
 .launch-content h3 {
-	font-family: "Roboto Medium";
+	font-family: "Roboto Medium", sans-serif;
 	font-weight: normal;
 }
 
@@ -284,7 +284,7 @@ p {
 }
 
 #timer {
-	font-family: "D-DIN Exp-Bold";
+	font-family: "D-DIN Exp-Bold", sans-serif;
 	font-size: 2.6em;
 	text-align: center;
 
@@ -297,7 +297,7 @@ p {
 
 .table-container {
 	background-color: #030014;
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	margin-bottom: 40px;
 	border-bottom: 1px solid #fff;
 }
@@ -317,7 +317,7 @@ p {
 
 .info-container {
 	display: inline-block;
-	font-family: "Roboto Medium";
+	font-family: "Roboto Medium", sans-serif;
 	font-size: 1.2em;
 	color: #030014;
 	padding: 10px 15px 8px 15px;
@@ -325,7 +325,7 @@ p {
 
 .site-container {
 	display: inline-block;
-	font-family: "Roboto Medium";
+	font-family: "Roboto Medium", sans-serif;
 	height: 60px;
 	padding: 10px 7px 8px 15px;
 }
@@ -365,7 +365,7 @@ p {
 }
 
 #number {
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-size: 6em;
 	display: inline-block;
 	margin-left: 50px;
@@ -380,7 +380,7 @@ p {
 }
 
 .peopleInSpace {
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	display: inline-block;
 	margin-left: 90px;
 	padding-bottom: 10px;
@@ -407,7 +407,7 @@ p a {
 }
 
 .label {
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-size: 1.1em;
 	margin: 20px auto 8px auto;
 	display: block;
@@ -446,7 +446,7 @@ button {
 	background-color: #046FB7;
 	color: #fff;
 	padding: 10px 15px 10px 15px;
-	font-family: "Roboto";
+	font-family: "Roboto", sans-serif;
 	font-size: 1em;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -462,6 +462,53 @@ button:hover {
 footer {
 	background-color: #030014;
 	color: #fff;
+	width: 100%;
+}
+
+.footer-text {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.1em;
+	padding: 20px 0;
+	margin: 0 auto;
+}
+
+footer .column1 {
+	margin-left: 32%;
+	margin-right: 250px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+footer .column2 {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-heading {
+	color: #fff;
+	font-family: "Roboto Medium", sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	margin-top: 30px;
+	margin-bottom: 18px;
+}
+
+footer a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding-bottom: 7px;
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+.copyright {
+	font-family: "Roboto";
+	text-align: center;
+	padding-bottom: 18px;
 }
 
 /*Media queries*/

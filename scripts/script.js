@@ -1,22 +1,16 @@
-document.addEventListener('DOMContentLoaded', function() {
+var request = new XMLHttpRequest();
 
-	window.onload = makeApiCall;
+request.open("GET", "https://spaceflightnewsapi.net/api/v1/articles?search=spacex");
 
-	function makeApiCall(e) {
-	    var requestUrl = "https://spaceflightnewsapi.net/api/v1/articles?search=spacex";
+request.onload = function() {
 
-	    var request = new XMLHttpRequest();
-	    request.open("GET", requestUrl);
+	var articles = JSON.parse(request.response);
 
-	    request.responseType = "json";
+		for (var i = 0; i < 6; i++) {
 
-	    request.send();
+			console.log(articles.docs[i].title);
 
-	    request.onload = (e) => fillPage(request.response);
-	}
-
-	function fillPage(myArticle) {
-		myArticle.docs.forEach(doc => {
+			var doc = articles.docs[i];
 
 			var docs = document.getElementById("article");
 
@@ -41,8 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			a.setAttribute("target", "_blank")
 			textbox.appendChild(a);
 			a.innerHTML = doc.title;
+		}
 
-		});
-	}
+}
 
-}, false);
+request.send();

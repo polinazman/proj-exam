@@ -168,6 +168,8 @@ h1 {
 .fact-box {
 	border-left: 2px solid #fff;
 	padding-left: 30px;
+	padding-bottom: 20px;
+	font-family: "Roboto";
 }
 
 hr {

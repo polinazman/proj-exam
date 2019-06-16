@@ -653,6 +653,12 @@ footer a:hover {
 		width: 245px;
 		height: 190px;
 	}
+	.site-container {
+		height: unset;
+	}
+	.site-info {
+		padding-left: 15px;
+	}
 	.contact-form {
 		padding-right: 20px;
 	}

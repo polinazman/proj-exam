@@ -32,7 +32,7 @@ request.onload = function() {
 						}
 					}, 1000);
 
-					for ( i = 0; i < launch.length; i++) {
+					for (var i = 0; i < launch.length; i++) {
 
 					var upcoming = launch[i];
 

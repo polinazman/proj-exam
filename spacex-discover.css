@@ -536,6 +536,9 @@ footer a:hover {
 	.countdown {
 		top: 24%;
 	}
+	footer .column1 {
+		margin-left: 25%;
+	}
 }
 
 @media screen and (max-width: 992px) {
@@ -558,6 +561,9 @@ footer a:hover {
 	}
 	.peopleInSpace {
 		margin-left: 33px;
+	}
+	footer .column1 {
+		margin-left: 15%;
 	}
 }
 
@@ -625,6 +631,10 @@ footer a:hover {
 		margin: auto;
 		display: block;
 	}
+	footer .column1 {
+		margin-left: 10%;
+		margin-right: 30px;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -645,5 +655,9 @@ footer a:hover {
 	}
 	.contact-form {
 		padding-right: 20px;
+	}
+	footer .column1 {
+		margin-left: 2%;
+		margin-right: 10px;
 	}
 }

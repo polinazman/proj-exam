@@ -13,6 +13,11 @@
 	src: url("../fonts/roboto-2014/Roboto-Regular.ttf");
 }
 
+@font-face {
+	font-family: "Roboto Medium";
+	src: url("../fonts/roboto-2014/Roboto-Medium.ttf");
+}
+
 body {
 	margin: 0;
 	background-color: #06151C;
@@ -262,6 +267,44 @@ p {
 	padding: 2px;
 }
 
+.table-container {
+	background-color: #030014;
+	font-family: "Roboto";
+	margin-bottom: 40px;
+	border-bottom: 1px solid #fff;
+}
+
+.date {
+	display: inline-block;
+	background-color: #046FB7;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding: 10px 15px 8px 15px;
+	height: 100%;
+}
+
+.table-top {
+	background-color: #8DA3C3;
+}
+
+.info-container {
+	display: inline-block;
+	font-family: "Roboto Medium";
+	font-size: 1.2em;
+	color: #030014;
+	padding: 10px 15px 8px 15px;
+}
+
+.site-container {
+	display: inline-block;
+	font-family: "Roboto Medium";
+	height: 60px;
+	padding: 10px 7px 8px 15px;
+}
+
+.site-info {
+	display: inline-block;
+}
 /*Live in space*/
 .live-content {
 	display: inline-block;
@@ -436,6 +479,7 @@ footer {
 	.navbar {
 		display: block;
 		float: none;
+		position: unset;
 	}
 	ul {
 		margin-top: unset;
@@ -449,7 +493,7 @@ footer {
 		margin-bottom: 2px;
 	}
 	main {
-	 	margin-top: 80px;
+	 	margin-top: 92px;
 	 }
 	.mainsection {
 		width: 75%;
@@ -494,8 +538,19 @@ footer {
 	#logo {
 		max-height: 24px;
 	}
+
+	.mainsection {
+		width: 90%;
+	}
+	.news {
+		width: 90%;
+		margin-left: 15%;
+	}
 	.col1 img {
 		width: 245px;
 		height: 190px;
+	}
+	.contact-form {
+		padding-right: 20px;
 	}
 }

@@ -181,6 +181,21 @@ hr {
 	padding-left: 30px;
 }
 
+.link-box a {
+	font-family: "Roboto";
+	text-decoration: none;
+	display: block;
+	color: #0486DC;
+	padding-bottom: 7px;
+}
+
+.link-box a::before {
+	content: "\2022";
+	color: #fff;
+	display: inline-block;
+	width: 1em;
+}
+
 h2 {
 	font-family: "D-DIN Exp-Bold";
 	text-transform: uppercase;
@@ -221,6 +236,8 @@ p {
 	font-family: "Roboto";
 	text-decoration: none;
 	color: #0486DC;
+	display: block;
+	padding-bottom: 7px;
 }
 
 .left-sidebar a::before {
@@ -229,6 +246,10 @@ p {
 	display: inline-block;
 	width: 1em;
 	margin-left: -1em;
+}
+
+#sublink1, #sublink2 {
+	margin-left: 1.3em;
 }
 
 .launch-content {
@@ -241,6 +262,11 @@ p {
 .launch-content h1 {
 	text-align: left;
 	margin-left: 0;
+}
+
+.launch-content h3 {
+	font-family: "Roboto Medium";
+	font-weight: normal;
 }
 
 .countdown {
@@ -307,6 +333,14 @@ p {
 .site-info {
 	display: inline-block;
 }
+
+.launch-content img {
+	width: 85%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
 /*Live in space*/
 .live-content {
 	display: inline-block;
@@ -352,6 +386,16 @@ p {
 	padding-bottom: 10px;
 	line-height: 23px;
 
+}
+
+.live-view {
+	margin-top: 60px;
+}
+
+p a {
+	text-decoration: none;
+	color: #0486DC;
+	padding-bottom: 7px;
 }
 
 /*Contact*/

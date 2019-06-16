@@ -45,9 +45,7 @@ request.onload = function() {
 					var upcomingRocket = upcoming.rocket.rocket_name + " " + upcoming.rocket.rocket_type;
 					var upcomingMission = upcoming.mission_name;
 
-					console.log(upcomingMission);
-
-					var upcomingLaunch = document.getElementById("launch");
+					var upcomingLaunch = document.getElementById("schedule");
 
 					var tableContainer = document.createElement("div");
 					tableContainer.setAttribute("class", "table-container");
